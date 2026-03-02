@@ -7,7 +7,8 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    glu    \
+    gendesk \
+    glu     \
     python
 
 echo "Installing debloated packages..."
