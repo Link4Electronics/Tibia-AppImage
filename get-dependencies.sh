@@ -15,6 +15,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+export DLAGENTS=("https::/usr/bin/wget -c -t 3 --waitretry=3 --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' --no-check-certificate -O %o %u")
 make-aur-package tibia
 
 # If the application needs to be manually built that has to be done down here
