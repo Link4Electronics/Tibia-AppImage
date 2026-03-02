@@ -13,7 +13,7 @@ export STARTUPWMCLASS=com.cipsoft.tibia
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/tibia
+quick-sharun /usr/bin/tibia usr/lib/libxml2-legacy/lib/*
 
 # Additional changes can be done in between here
 
