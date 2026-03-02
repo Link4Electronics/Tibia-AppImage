@@ -17,6 +17,6 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
 # Site blocks github
-PRE_BUILD_CMDS="sed -i 's|https://static.tibia.com\"|https://api.rv.pkgforge.dev/https://static.tibia.com\")|; /agreement.php/d; /html2text/d; /sha256sums=/,/)/c\sha256sums=SKIP' ./PKGBUILD; sed -i '/DLAGENTS=/,/)/d; s|cd \$_name|cd Tibia|; s|install -Dm644 LICENSE|touch LICENSE; &|' ./PKGBUILD" make-aur-package tibia
+make-aur-package
 
 # If the application needs to be manually built that has to be done down here
