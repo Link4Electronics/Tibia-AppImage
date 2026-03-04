@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Tibia-AppImage)](https://github.com/pkgforge-dev/Tibia-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://private-user-images.githubusercontent.com/36420837/509154871-0de7bd75-fd58-44f0-ba5f-74bad7261a3b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI0MTg0ODAsIm5iZiI6MTc3MjQxODE4MCwicGF0aCI6Ii8zNjQyMDgzNy81MDkxNTQ4NzEtMGRlN2JkNzUtZmQ1OC00NGYwLWJhNWYtNzRiYWQ3MjYxYTNiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAyVDAyMjMwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2MGJmNGYyYTAwNzg3OWM5Y2RmYzUzZDI3ZjlmYjEwNjllNjVmYjViMWEzODEwYjcwZjliYzFjYjdiYzdmN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.rAZjSDorko8yO75u1BRkD-YdeMLDA1-r2dfkoaunB1A" width="128" />
+  <img src="https://github.com/user-attachments/assets/0de7bd75-fd58-44f0-ba5f-74bad7261a3b" width="128" />
 </p>
 
 
