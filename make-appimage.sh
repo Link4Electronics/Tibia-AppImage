@@ -3,18 +3,25 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q PACKAGENAME | awk '{print $2; exit}') # example command to get version of application here
+VERSION=latest
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=PATH_OR_URL_TO_ICON
-export DESKTOP=PATH_OR_URL_TO_DESKTOP_ENTRY
+export DESKTOP=/usr/share/applications/tibia.desktop
+export DEPLOY_QT=1
+export QT_DIR=qt6
+export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+#quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/client ./AppDir/bin/BattlEye/BEClient.so /usr/bin/env
+quick-sharun ./AppDir/bin/Tibia /usr/lib/libnss3.so /usr/lib/libsmime3.so /usr/lib/libasound.so* /usr/bin/env
+# this app has problems with other locales breaking physics
+echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
 
-# Additional changes can be done in between here
+cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
+echo 'execve-sharun-hack.so' >> ./AppDir/.preload
+echo 'export ANYLINUX_EXECVE_WRAP_PATHS="$DATADIR"' >> ./AppDir/bin/execve-wrap-path.hook
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
