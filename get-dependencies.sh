@@ -7,6 +7,8 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+    glu             \
+    libxml2-legacy  \
     qt6-base        \
     qt6-declarative \
     qt6-wayland
