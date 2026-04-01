@@ -29,5 +29,5 @@ mkdir -p ./AppDir/bin
 wget https://api.rv.pkgforge.dev/https://static.tibia.com/download/tibia.x64.tar.gz
 wget -O ./AppDir/bin/LICENSE https://www.tibia.com/support/agreement.php 
 tar -xvf tibia.x64.tar.gz
-
+rm -f *.tar.gz
 mv -v Tibia ./AppDir/bin
