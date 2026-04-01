@@ -20,14 +20,14 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-PRE_BUILD_CMDS='sed -i "s|https://static.tibia.com|https://pkgforge.dev|" ./PKGBUILD' make-aur-package tibia
+#PRE_BUILD_CMDS='sed -i "s|https://static.tibia.com|https://pkgforge.dev|" ./PKGBUILD' make-aur-package tibia
 
 # If the application needs to be manually built that has to be done down here
+echo "Getting app..."
+echo "---------------------------------------------------------------"
+mkdir -p ./AppDir/bin
+wget https://api.rv.pkgforge.dev/https://static.tibia.com/download/tibia.x64.tar.gz
+wget -O ./AppDir/bin/LICENSE https://www.tibia.com/support/agreement.php 
+tar -xvf tibia.x64.tar.gz
 
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+mv -v Tibia ./AppDir/bin
