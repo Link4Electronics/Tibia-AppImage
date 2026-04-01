@@ -7,8 +7,10 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+    gendesk         \
     glu             \
     libxml2-legacy  \
+    python          \
     qt6-base        \
     qt6-declarative \
     qt6-wayland
