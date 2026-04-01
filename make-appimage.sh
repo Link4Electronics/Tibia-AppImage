@@ -13,7 +13,7 @@ export DEPLOY_QT=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/client
+quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/client ./AppDir/bin/BattlEye/BEClient.so
 
 # Additional changes can be done in between here
 
