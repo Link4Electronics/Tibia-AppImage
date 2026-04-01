@@ -12,7 +12,7 @@ export DESKTOP=/usr/share/applications/tibia.desktop
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun ./AppDir/bin/Tibia
 
 # Additional changes can be done in between here
 
