@@ -13,7 +13,9 @@ pacman -Syu --noconfirm \
     python          \
     qt6-base        \
     qt6-declarative \
-    qt6-wayland
+    qt6-scxml       \
+    qt6-wayland     \
+    qt6-webengine
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
