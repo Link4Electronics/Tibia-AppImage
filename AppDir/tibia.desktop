@@ -6,5 +6,5 @@ Exec=Tibia
 Icon=tibia
 Terminal=false
 StartupNotify=false
-StartupWMClass=
+StartupWMClass=com.cipsoft.Tibia
 Categories=Application;Game;RPG;MMO;
