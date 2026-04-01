@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Tibia
+Comment=Tibia
+Exec=Tibia
+Icon=tibia
+Terminal=false
+StartupNotify=false
+StartupWMClass=
+Categories=Application;Game;RPG;MMO;
