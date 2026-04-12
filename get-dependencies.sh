@@ -9,13 +9,16 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     gendesk         \
     glu             \
+    kvantum         \
     libxml2-legacy  \
+    lxqt-qtplugin   \
     python          \
     qt6-base        \
     qt6-declarative \
     qt6-scxml       \
     qt6-wayland     \
-    qt6-webengine
+    qt6-webengine   \
+    qt6ct
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
