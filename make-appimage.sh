@@ -15,7 +15,7 @@ export DEPLOY_VULKAN=1
 
 # Deploy dependencies
 #quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/client ./AppDir/bin/BattlEye/BEClient.so /usr/bin/env
-quick-sharun ./AppDir/bin/Tibia /usr/lib/libnss3.so /usr/lib/libsmime3.so /usr/bin/env
+quick-sharun ./AppDir/bin/Tibia /usr/lib/libnss3.so /usr/lib/libsmime3.so /usr/lib/libasound.so* /usr/bin/env
 
 # Additional changes can be done in between here
 # this app has problems with other locales breaking physics
