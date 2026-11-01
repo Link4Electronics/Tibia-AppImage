@@ -28,6 +28,5 @@ echo "Getting app..."
 echo "---------------------------------------------------------------"
 mkdir -p ./AppDir/bin
 wget https://api.rv.pkgforge.dev/https://static.tibia.com/download/tibia.x64.tar.gz
-tar -xvf tibia.x64.tar.gz --strip-components=1
+tar -xvf tibia.x64.tar.gz --strip-components=1 -C ./AppDir/bin
 rm -f *.tar.gz
-mv -v Tibia ./AppDir/bin
