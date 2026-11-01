@@ -15,7 +15,7 @@ export DEPLOY_VULKAN=1
 
 # Deploy dependencies
 #quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/client ./AppDir/bin/BattlEye/BEClient.so /usr/bin/env
-quick-sharun ./AppDir/bin/Tibia ./AppDir/bin/plugins/*/* /usr/lib/libnss3.so /usr/lib/libsmime3.so /usr/lib/libasound.so* /usr/bin/env
+quick-sharun ./AppDir/bin/Tibia /usr/lib/libnss3.so /usr/lib/libsmime3.so /usr/lib/libasound.so* /usr/bin/env
 # this app has problems with other locales breaking physics
 echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
 
