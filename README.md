@@ -17,6 +17,8 @@
 
 </div>
 
+## ⚠️ We take no responsability if get banned due to any anti-cheat Cipsoft may have put on Tibia ⚠️
+
 ---
 
 AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
